@@ -1,6 +1,6 @@
 <html direction="rtl" dir="rtl" style="direction: rtl" >
 	<head>
-		<base href="">
+		<base href="../">
 		<meta charset="utf-8" />
 		<title>Rasad | Dashboard</title>
 		<meta name="description" content="Updates and statistics" />
@@ -66,7 +66,7 @@
 					<div class="aside-menu-wrapper flex-column-fluid" id="kt_aside_menu_wrapper">
 						<div id="kt_aside_menu" class="aside-menu my-4" data-menu-vertical="1" data-menu-scroll="1" data-menu-dropdown-timeout="500">
 							<ul class="menu-nav">
-								<li class="menu-item menu-item-active" aria-haspopup="true">
+								<li class="menu-item" aria-haspopup="true">
 									<a href="#" class="menu-link">
 										<span class="svg-icon menu-icon">
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -124,7 +124,7 @@
 										</ul>
 									</div>
 								</li>
-								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu menu-item-active" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -144,7 +144,7 @@
 										<i class="menu-arrow"></i>
 										<ul class="menu-subnav">
 											<li class="menu-item" aria-haspopup="true">
-												<a href="pages/peygiri.html" class="menu-link">
+												<a href="#" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
 													</i>
@@ -519,11 +519,11 @@
 							<div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
 								<div class="d-flex align-items-center flex-wrap mr-2">
 									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">
-										پیشخوان
+										اطلاعات پایه
 									</h5>
 									<div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
 									<span class="text-muted font-weight-bold mr-4">
-										ورود اطلاعات
+										انواع پیگیری
 									</span>
 								</div>
 								<div class="d-flex align-items-center">
@@ -548,138 +548,187 @@
 										<div class="card card-custom example example-compact">
 											<div class="card-header">
 												<h3 class="card-title">
-													ورود اطلاعات کاربر
+													انواع پیگیری
 												</h3>
 											</div>
 											<form class="form font-family-yekan-regular">
 												<div class="card-body">
 													<div class="form-group row mt-3">
 														<label class="col-lg-1 col-form-label text-right">
-															نام کامل
+															عنوان
 														</label>
 														<div class="col-lg-3">
 															<input type="email" class="form-control" />
-															<span class="form-text text-muted">
-																لطفاً نام کامل را وارد نمایید
+															<span class="form-text text-muted Pt-2">
+																عنوان وام را وارد نمایید
 															</span>
 														</div>
 														<label class="col-lg-1 col-form-label text-right">
-															ایمیل
+															نوع وام
 														</label>
 														<div class="col-lg-3">
-															<input type="email" class="form-control"  />
-															<span class="form-text text-muted">
-																لطفاً ایمیل را کامل وارد نمایید
+															<select class="form-control" id="exampleSelect1">
+																<option>
+																	قرض الحسنه
+																</option>
+																<option>
+																	بازنشستگی
+																</option>
+																<option>
+																	بسیج
+																</option>
+															</select>
+															<span class="form-text text-muted Pt-2">
+																نوع وام را وارد نمایید
 															</span>
 														</div>
 														<label class="col-lg-1 col-form-label text-right">
-															نام کاربری
+															کارمزد
 														</label>
 														<div class="col-lg-3">
 															<div class="input-group">
 																<div class="input-group-prepend">
 																	<span class="input-group-text">
-																		<i class="la la-user"></i>
+																		<i class="la la-percent"></i>
 																	</span>
 																</div>
 																<input type="text" class="form-control" placeholder="" />
 															</div>
-															<span class="form-text text-muted">
-																نام کاربری را وارد نمایید
+															<span class="form-text text-muted Pt-2">
+																کارمزد وام را به درصد وارد نمایید
 															</span>
 														</div>
 													</div>
 													<div class="separator separator-dashed my-10"></div>
-													<div class="form-group row">
+													<h4 class="text-left">
+														شرایط															
+													</h4>
+													<div class="form-group row mt-3">
 														<label class="col-lg-1 col-form-label text-right">
-															شماره تماس
 														</label>
-														<div class="col-lg-3">
-															<input type="email" class="form-control" />
-															<span class="form-text text-muted">
-																لطفاً شماره تماس را وارد نمایید
-															</span>
+														<div class="col-lg-4">
+															<select class="form-control" id="exampleSelect1">
+																<option>
+																	تعداد روز گذشته از مهلت
+																</option>
+																<option>
+																	تعداد روز گذشته از مهلت
+																</option>
+																<option>
+																	تعداد روز گذشته از مهلت
+																</option>
+															</select>
 														</div>
 														<label class="col-lg-1 col-form-label text-right">
-															فکس
+															از
 														</label>
-														<div class="col-lg-3">
-															<div class="input-group">
-																<input type="text" class="form-control" />
-																<div class="input-group-append">
-																	<span class="input-group-text">
-																		<i class="la la-info-circle"></i>
-																	</span>
-																</div>
-															</div>
-															<span class="form-text text-muted">
-																لطفاً فکس را وارد نمایید
-															</span>
+														<div class="col-lg-2">
+															<input type="email" class="form-control"  />
 														</div>
 														<label class="col-lg-1 col-form-label text-right">
-															آدرس
+															تا
 														</label>
-														<div class="col-lg-3">
-															<div class="input-group">
-																<input type="text" class="form-control" />
-																<div class="input-group-append">
-																	<span class="input-group-text">
-																		<i class="la la-map-marker"></i>
-																	</span>
-																</div>
-															</div>
-															<span class="form-text text-muted">
-																لطفاً آدرس را وارد نمایید
-															</span>
+														<div class="col-lg-2">
+															<input type="email" class="form-control"  />
 														</div>
+														<label class="col-lg-1 col-form-label text-left">
+														روز
+														</label>
+													</div>
+													<div class="form-group row mt-3">														
+														<label class="col-lg-1 col-form-label text-right">
+														</label>
+														<div class="col-lg-4">
+															<select class="form-control" id="exampleSelect1">
+																<option>
+																	مبلغ تسهیلات
+																</option>
+																<option>
+																	مبلغ تسهیلات
+																</option>
+																<option>
+																	مبلغ تسهیلات
+																</option>
+															</select>
+														</div>
+														<label class="col-lg-1 col-form-label text-right">
+															از
+														</label>
+														<div class="col-lg-2">
+															<input type="email" class="form-control"  />
+														</div>
+														<label class="col-lg-1 col-form-label text-right">
+															تا
+														</label>
+														<div class="col-lg-2">
+															<input type="email" class="form-control"  />
+														</div>
+														<label class="col-lg-1 col-form-label text-left">
+														ریال
+														</label>
+													</div>
+													<div class="col-lg-3 text-right">
+														<a href="#" class="btn btn-success  btn-pill">
+															<i class="flaticon2-plus"></i> 
+															افزودن شرط جدید
+														</a>
 													</div>
 													<div class="separator separator-dashed my-10"></div>
-													<div class="form-group row">
+													<h4 class="text-left">
+														مراحل															
+													</h4>
+													<div class="form-group row mt-3">
 														<label class="col-lg-1 col-form-label text-right">
-															کد پستی
+															مرحله اول
 														</label>
-														<div class="col-lg-3">
-															<div class="input-group">
-																<input type="text" class="form-control" />
-																<div class="input-group-append">
-																	<span class="input-group-text">
-																		<i class="la la-bookmark-o"></i>
-																	</span>
-																</div>
-															</div>
-															<span class="form-text text-muted">
-																لطفاً کد پستی را وارد نمایید
-															</span>
-														</div>
-														<label class="col-lg-1 col-form-label text-right">
-															جنسیت
-														</label>
-														<div class="col-lg-3">
-															<div class="radio-inline">
-																<label class="radio radio-solid">
-																<input type="radio" name="example_2" checked="checked" value="2" />
-																زن
-																<span></span></label>
-																<label class="radio radio-solid">
-																<input type="radio" name="example_2" value="2" />
-																مرد
-																<span></span></label>
-															</div>
+														<div class="col-lg-4">
+															<select class="form-control" id="exampleSelect1">
+																<option>
+																	1
+																</option>
+																<option>
+																	2
+																</option>
+															</select>
 														</div>
 													</div>
-													<div class="example-code mt-10">
-														<ul class="example-nav nav nav-tabs nav-bold nav-tabs-line nav-tabs-line-2x">
-															<li class="nav-item">
-																<a class="nav-link active" data-toggle="tab" href="#example_code_html_4">HTML</a>
-															</li>
-														</ul>
-														<div class="tab-content">
-															<div class="tab-pane active" id="example_code_html_4" role="tabpanel">
-																<div class="example-highlight">
-																	
-																</div>
-															</div>
+													<div class="form-group row mt-3">														
+														<label class="col-lg-1 col-form-label text-right">
+														</label>
+														<div class="col-lg-4">
+															<select class="form-control" id="exampleSelect1">
+																<option>
+																	مبلغ تسهیلات
+																</option>
+																<option>
+																	مبلغ تسهیلات
+																</option>
+																<option>
+																	مبلغ تسهیلات
+																</option>
+															</select>
 														</div>
+														<label class="col-lg-1 col-form-label text-right">
+															از
+														</label>
+														<div class="col-lg-2">
+															<input type="email" class="form-control"  />
+														</div>
+														<label class="col-lg-1 col-form-label text-right">
+															تا
+														</label>
+														<div class="col-lg-2">
+															<input type="email" class="form-control"  />
+														</div>
+														<label class="col-lg-1 col-form-label text-left">
+														ریال
+														</label>
+													</div>
+													<div class="col-lg-3 text-right">
+														<a href="#" class="btn btn-success  btn-pill">
+															<i class="flaticon2-plus"></i> 
+															افزودن مرحله بعد
+														</a>
 													</div>
 												</div>
 												<div class="card-footer">
@@ -701,10 +750,6 @@
 								</div>
 							</div>
 						</div>
-
-
-					
-
 
 					</div>
 					<!--انتهای محتوای وسط فرمها-->
