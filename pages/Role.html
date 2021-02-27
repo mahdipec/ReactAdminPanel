@@ -124,7 +124,7 @@
 										</ul>
 									</div>
 								</li>
-								<li class="menu-item menu-item-submenu menu-item-active" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -166,7 +166,7 @@
 										</ul>
 									</div>
 								</li>
-								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu menu-item-active" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">											
@@ -196,7 +196,7 @@
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
-												<a href="pages/User.html" class="menu-link">
+												<a href="User.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
 													</i>
@@ -519,11 +519,11 @@
 							<div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
 								<div class="d-flex align-items-center flex-wrap mr-2">
 									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">
-										اطلاعات پایه
+										مدیریت کاربران
 									</h5>
 									<div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
 									<span class="text-muted font-weight-bold mr-4">
-										انواع پیگیری
+										نقش ها
 									</span>
 								</div>
 								<div class="d-flex align-items-center">
@@ -548,7 +548,7 @@
 										<div class="card card-custom example example-compact">
 											<div class="card-header">
 												<h3 class="card-title">
-													انواع پیگیری
+													نقش ها
 												</h3>
 											</div>
 											<form class="form font-family-yekan-regular">
@@ -557,211 +557,77 @@
 														<label class="col-lg-1 col-form-label text-right">
 															عنوان
 														</label>
-														<div class="col-lg-3">
-															<input type="email" class="form-control" />
-															<span class="form-text text-muted Pt-2">
-																عنوان وام را وارد نمایید
-															</span>
+														<div class="col-lg-10">
+															<input type="text" class="form-control" />
+														</div>
+													</div>
+													<div class="form-group row mt-3">
+														<label class="col-lg-1 col-form-label text-right">
+															دسترسی ها
+														</label>
+														<div class="col-lg-4">
+															<input type="text" class="form-control" />
 														</div>
 														<label class="col-lg-1 col-form-label text-right">
-															نوع وام
+															دسترسی ها
 														</label>
-														<div class="col-lg-3">
+														<div class="col-lg-5">
 															<select class="form-control" id="exampleSelect1">
 																<option>
-																	قرض الحسنه
+																	1
 																</option>
 																<option>
-																	بازنشستگی
-																</option>
-																<option>
-																	بسیج
+																	2
 																</option>
 															</select>
-															<span class="form-text text-muted Pt-2">
-																نوع وام را وارد نمایید
-															</span>
 														</div>
-														<label class="col-lg-1 col-form-label text-right">
-															کارمزد
-														</label>
-														<div class="col-lg-3">
-															<div class="input-group">
-																<div class="input-group-prepend">
-																	<span class="input-group-text">
-																		<i class="la la-percent"></i>
-																	</span>
+													</div>
+													<div class="separator separator-dashed my-10"></div>
+													<div class="form-group row mt-3">
+														<div class="col-lg-12">
+															<div class="card card-custom card-fit card-border">
+																<div class="card-header">
+																	<div class="card-title">
+																		<span class="card-icon">
+																			<i class="flaticon2-user text-primary"></i>
+																		</span>
+																		<h3 class="card-label">
+																			فهرست نقش های کاربر
+																		</h3>
+																	</div>																
 																</div>
-																<input type="text" class="form-control" placeholder="" />
-															</div>
-															<span class="form-text text-muted Pt-2">
-																کارمزد وام را به درصد وارد نمایید
-															</span>
-														</div>
-													</div>
-													<div class="separator separator-dashed my-10"></div>
-													<h4 class="text-left">
-														شرایط															
-													</h4>
-													<div class="form-group row mt-3">
-														<label class="col-lg-1 col-form-label text-right">
-														</label>
-														<div class="col-lg-4">
-															<select class="form-control" id="exampleSelect1">
-																<option>
-																	تعداد روز گذشته از مهلت
-																</option>
-																<option>
-																	تعداد روز گذشته از مهلت
-																</option>
-																<option>
-																	تعداد روز گذشته از مهلت
-																</option>
-															</select>
-														</div>
-														<label class="col-lg-1 col-form-label text-right">
-															از
-														</label>
-														<div class="col-lg-2">
-															<input type="email" class="form-control"  />
-														</div>
-														<label class="col-lg-1 col-form-label text-right">
-															تا
-														</label>
-														<div class="col-lg-2">
-															<input type="email" class="form-control"  />
-														</div>
-														<label class="col-lg-1 col-form-label text-left">
-														روز
-														</label>
-													</div>
-													<div class="form-group row mt-3">														
-														<label class="col-lg-1 col-form-label text-right">
-														</label>
-														<div class="col-lg-4">
-															<select class="form-control" id="exampleSelect1">
-																<option>
-																	مبلغ تسهیلات
-																</option>
-																<option>
-																	مبلغ تسهیلات
-																</option>
-																<option>
-																	مبلغ تسهیلات
-																</option>
-															</select>
-														</div>
-														<label class="col-lg-1 col-form-label text-right">
-															از
-														</label>
-														<div class="col-lg-2">
-															<input type="email" class="form-control"  />
-														</div>
-														<label class="col-lg-1 col-form-label text-right">
-															تا
-														</label>
-														<div class="col-lg-2">
-															<input type="email" class="form-control"  />
-														</div>
-														<label class="col-lg-1 col-form-label text-left">
-														ریال
-														</label>
-													</div>
-													<div class="col-lg-11 text-right">
-														<a href="#" class="btn btn-success  btn-pill">
-															<i class="flaticon2-plus"></i> 
-															افزودن شرط جدید
-														</a>
-													</div>
-													<div class="separator separator-dashed my-10"></div>
-													<h4 class="text-left">
-														مراحل															
-													</h4>
-													<div class="form-group row mt-3">
-														<label class="col-lg-2 col-form-label text-right">
-															مرحله اول
-														</label>
-														<div class="col-lg-3">
-															<select class="form-control" id="exampleSelect1">
-																<option>
-																	1
-																</option>
-																<option>
-																	2
-																</option>
-															</select>
-														</div>
-													</div>
-													<div class="form-group row mt-3">														
-														<label class="col-lg-2 col-form-label text-right">
-															فاصله تا مرحله بعد
-														</label>
-														<div class="col-lg-3">
-															<input type="email" class="form-control"  />
-														</div>
-														<label class="col-lg-6 col-form-label text-left">
-															روز در صورت عدم وصول
-														</label>
-													</div>
-													<div class="form-group row mt-3">														
-														<label class="col-lg-2 col-form-label text-right">
-															به ازای هر وصولی
-														</label>
-														<div class="col-lg-3">
-															<input type="email" class="form-control"  />
-														</div>
-														<label class="col-lg-6 col-form-label text-left">
-															روز می تواند پیگیری را به تعویق اندازد
-														</label>
-													</div>
-													<div class="col-lg-11 text-right">
-														<a href="#" class="btn btn-success  btn-pill">
-															<i class="flaticon2-plus"></i> 
-															افزودن مرحله بعد
-														</a>
-													</div>
-													<div class="form-group row mt-3">
-														<label class="col-lg-2 col-form-label text-right">
-															مرحله دوم
-														</label>
-														<div class="col-lg-3">
-															<select class="form-control" id="exampleSelect1">
-																<option>
-																	1
-																</option>
-																<option>
-																	2
-																</option>
-															</select>
-														</div>
-													</div>
-													<div class="form-group row mt-3">														
-														<label class="col-lg-2 col-form-label text-right">
-															فاصله تا مرحله بعد
-														</label>
-														<div class="col-lg-3">
-															<input type="email" class="form-control"  />
-														</div>
-														<label class="col-lg-6 col-form-label text-left">
-															روز در صورت عدم وصول
-														</label>
-													</div>
-													<div class="form-group row mt-3">														
-														<label class="col-lg-2 col-form-label text-right">
-															به ازای هر وصولی
-														</label>
-														<div class="col-lg-3">
-															<input type="email" class="form-control"  />
-														</div>
-														<label class="col-lg-6 col-form-label text-left">
-															روز می تواند پیگیری را به تعویق اندازد
-														</label>
-													</div>
-													<div class="col-lg-11 text-right">
-														<a href="#" class="btn btn-success  btn-pill">
-															<i class="flaticon2-plus"></i> 
-															افزودن مرحله بعد
-														</a>
+																<div class="card-body pt-2">
+																	<table class="table">
+																		<thead>
+																			<tr>
+																				<th>
+																					ردیف
+																				</th>
+																				<th>
+																					عنوان
+																				</th>
+																				<th>
+																					دسترسی
+																				</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td>
+																					1
+																				</td>
+																				<td>
+																					رویت کننده اطلاعات پایه
+																				</td>
+																				<td>
+																					اطلاعات پایه
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</div>		
+														</div>											
 													</div>
 												</div>
 												<div class="card-footer">
